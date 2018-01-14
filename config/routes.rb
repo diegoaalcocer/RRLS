@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :portfolios
+  get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
+  
   get 'pages/about'
 
   get 'pages/services'
