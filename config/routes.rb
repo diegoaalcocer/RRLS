@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  devise_for :admins, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }  
   resources :portfolios
+  
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   
   get 'pages/about'
