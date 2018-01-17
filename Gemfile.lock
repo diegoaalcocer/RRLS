@@ -58,6 +58,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
+    devcamp_view_tool (0.1.0)
     devise (4.4.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -180,6 +181,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.beta3)
   byebug
   coffee-rails (~> 4.2)
+  devcamp_view_tool (~> 0.1.0)
   devise (~> 4.4)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
