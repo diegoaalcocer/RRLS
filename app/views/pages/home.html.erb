@@ -1,2 +1,73 @@
-<h1>Hi, <%= current_user.first_name %></h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= render "shared/application_nav" %>
+<%= render "shared/home_slider" %>
+
+<div class="about">
+  <div class="container">
+    <div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <img src="<%= image_path('6.jpg') %>" class="img-responsive" />
+    </div>
+
+    <div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+      <h2>About our Buisness</h2>
+      <p><p>Alco Landscaping Services is a family owned and operated company that has been providing the Coachella Valley with excellent landscaping services since 2017. Ruben Alcocer, the owner of the company, has an unmatched love for gardening that is clearly reflected in the many beautiful projects the company has completed. Mr. Alcocer’s hard work and early drive for success was what allowed the company to blossom into the reputable business it is today. 
+      </p></p>
+    </div>
+  </div>
+</div>
+
+<div class="lates">
+  <div class="container">
+    <div class="text-center">
+      <h2>Our Services</h2>
+    </div>
+    <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <img src="<%= image_path('10.jpg') %>" class="img-responsive" />
+      <h3>Landscape Installation</h3>
+        <ul>
+          <li>Retro-fit Landscape</li>
+          <li>Flower Beds</li>
+          <li>Irrigation Installation</li>
+        </ul>  
+    </div>
+
+    <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+      <img src="<%= image_path('11.jpg') %>" class="img-responsive" />
+      <h3>Tree Services</h3>
+        <ul>
+          <li>Tree Planting</li>
+          <li>Tree Pruning</li>
+          <li>Tree Removal</li>
+        </ul> 
+    </div>
+
+    <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+      <img src="<%= image_path('12.jpg') %>" class="img-responsive" />
+      <h3>Landscape Maintenance</h3>
+        <ul>
+          <li>Lawn Mowing</li>
+          <li>Scalping & Re-seeding</li>
+          <li>Commercial, Homeowners Assocations, Residential</li>
+        </ul> 
+    </div>
+  </div>
+</div>
+
+<section id="conatcat-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="pull-left">
+            <i class="fa fa-phone"></i>
+          </div>
+          <div class="media-body">
+            <h2>Have a question or need a custom quote?</h2>
+            <p>Please give us a call if you have a question or would like to recieve a custom quote on a project. (760) 668-1872</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/.container-->
+</section>
+<!--/#conatcat-info-->
