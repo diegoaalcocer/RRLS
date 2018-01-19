@@ -18,6 +18,6 @@ module ApplicationHelper
 
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'R&R Landscaping Services', 'All rights reserved'
+    DevcampViewTool::Renderer.copyright 'Alco Landscaping Services', 'All rights reserved'
   end
 end

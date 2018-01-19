@@ -1,26 +1,49 @@
-<h1>Would you like to work together?</h1>
+<%= render "shared/contact_nav" %>
 
-<hr>
-
-<div class="row">
-  <div class="col-md-6">
-    <h3>Office Address</h3>
-
-    <p>7150 E Camelback Rd, Suite 444, Scottsdale, AZ 85251</p>
-
-    <h3>Phone</h3>
-
-    <p><%= number_to_phone "4322386131" %></p>
-
-    <h3>Email</h3>
-
-    <p><a href="mailto:jordan@devcamp.com?subject=PortfolioContact" "email me">Email me</a> </p>
-  </div>
-
-  <div class="col-md-6">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.944949124724!2d-111.92897748422938!3d33.502809380759025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0bbd35df8635%3A0xf873d55c2d4dc69a!2s7150+E+Camelback+Rd+%23444%2C+Scottsdale%2C+AZ+85251!5e0!3m2!1sen!2sus!4v1484796936675" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div id="breadcrumb">
+  <div class="container">
+    <div class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li>Contact</li>
+    </div>
   </div>
 </div>
 
-
-
+<section id="contact-page">
+  <div class="container">
+    <div class="center">
+      <h2>Drop Your Message</h2>
+      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="row contact-wrap">
+      <div class="status alert alert-success" style="display: none"></div>
+      <div class="col-md-6 col-md-offset-3">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1GE0lMwuyeB-ToG_7XRQrx15os05F7yBR" width="640" height="480"></iframe>
+        <div id="sendmessage">Your message has been sent. Thank you!</div>
+        <div id="errormessage"></div>
+        <form action="" method="post" role="form" class="contactForm">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validation"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            <div class="validation"></div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validation"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            <div class="validation"></div>
+          </div>
+          <div class="text-center"><button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button></div>
+        </form>
+      </div>
+    </div>
+    <!--/.row-->
+  </div>
+  <!--/.container-->
+</section>
+<!--/#contact-page-->

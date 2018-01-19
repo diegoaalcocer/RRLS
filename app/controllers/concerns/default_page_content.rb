@@ -6,7 +6,7 @@ module DefaultPageContent
   end
 
   def set_page_defaults
-    @page_title = "R&R Landscaping Services"
-    @seo_keywords = "R&R Landscaping Services coachella valley cv desert landscaping service desert landscape flowers plants bushes"
+    @page_title = "Alco Landscaping Services"
+    @seo_keywords = "Alco Landscaping Services coachella valley cv desert landscaping service desert landscape flowers plants bushes"
   end
 end
