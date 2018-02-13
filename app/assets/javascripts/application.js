@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require turbolinks
+//= require_tree .
 //= require js/jquery-2.1.1.min
 //= require js/bootstrap.min
 //= require js/jquery.prettyPhoto
