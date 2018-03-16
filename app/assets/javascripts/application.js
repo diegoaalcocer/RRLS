@@ -18,4 +18,6 @@
 //= require js/wow.min
 //= require js/functions
 //= require js/contactform
+//= require popper
+//= require popover_config
 //= require_tree .
