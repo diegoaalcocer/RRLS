@@ -16,5 +16,10 @@
  *= require css/font-awesome.min
  *= require css/animate
  *= require css/prettyPhoto
+ *= require css/animate.min
+ *= require css/bootstrap-theme
+ *= require css/bootstrap-theme.min
+ *= require css/bootstrap
+ *= require css/font-awesome.css
  *= require css/style
  */
