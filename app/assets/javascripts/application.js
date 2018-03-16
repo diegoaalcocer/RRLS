@@ -12,8 +12,11 @@
 //
 //= require turbolinks
 //= require js/jquery-2.1.1.min
+//= require js/bootstrap
 //= require js/bootstrap.min
+//= require js/jquery
 //= require js/jquery.prettyPhoto
+//= require js/html5shiv
 //= require js/jquery.isotope.min
 //= require js/wow.min
 //= require js/functions
